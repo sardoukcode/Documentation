@@ -1,63 +1,63 @@
 * {
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
-  }
-  
-  body {
-    width: 1060px;
-    margin: auto;
-  }
-  
-  section {
-    padding: 20px;
-  }
-  
-  #contact {
-    padding: 2px;
-    position: absolute;
-    top: 0%;
-    right: 0;
-  }
-  
-  body div:nth-child(1) {
-    position: relative;
-    margin: 10px 50;
-  }
-  
-  .content {
-    display: flex;
-  
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .content section {
-    width: 50%;
-  }
-  
-  header div {
-    display: flex;
-  }
-  
-  .contacts {
-    background-color: black;
-  }
-  
-  .contact {
-    display: flex;
-  }
-  
-  /* padding */
-  
-  hgroup {
-    padding: 3%;
-  }
-  #contact {
-    padding: 2%;
-  }
-  
-  /* padding for contact */
-  /*
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1060px;
+  margin: auto;
+}
+
+section {
+  padding: 20px;
+}
+
+#contact {
+  padding: 2px;
+  position: absolute;
+  top: 0%;
+  right: 0;
+}
+
+body div:nth-child(1) {
+  position: relative;
+  margin: 10px 50;
+}
+
+.content {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.content section {
+  width: 50%;
+}
+
+header div {
+  display: flex;
+}
+
+.contacts {
+  background-color: black;
+}
+
+.contact {
+  display: flex;
+}
+
+/* padding */
+
+hgroup {
+  padding: 3%;
+}
+#contact {
+  padding: 2%;
+}
+
+/* padding for contact */
+/*
   .contact-phone .contact-value {
     margin-left: 20px;
   }
@@ -76,183 +76,182 @@
     margin-left: 65px;
   }
   */
-  
-  /*header*/
-  .contact-value {
-    color: red;
-  }
-  a {
-    color: red;
-    text-decoration: none;
-  }
-  
-  hgroup h1 {
-    padding-bottom: 20px;
-    color: red;
-  }
-  hgroup h2 {
-    color: red;
-  }
-  img {
-    padding-left: 40px;
-  }
-  
-  #contact h3 {
-    display: none;
-  }
-  /* contact*/
-  header {
-    background-color: rgb(167, 164, 164);
-  }
-  .contact-type {
-    color: white;
-    background-color: red;
-    width: 110px;
-    padding-top: 4px;
-  }
-  
-  /* second section*/
-  #about {
-    margin-top: 50px;
-  }
-  #about h3 {
-    margin-bottom: 20px;
-    padding-bottom: 4px;
-    border-bottom: 1px solid rgb(177, 168, 168);
-  }
-  
-  #competencies {
-    margin-top: 50px;
-  }
-  #competencies h3 {
-    margin-bottom: 20px;
-    padding-bottom: 4px;
-    border-bottom: 1px solid rgb(177, 168, 168);
-  }
-  /* red circle */
-  #competencies h3::before {
-    content: "🔴";
-    color: red;
-  }
-  #about h3::before {
-    content: "🔴";
-    color: red;
-  }
-  
-  #experiences h3::before {
-    content: "🔴";
-    color: red;
-  }
-  #education h3::before {
-    content: "🔴";
-    color: red;
-  }
-  #hobbies h3::before {
-    content: "🔴";
-    color: red;
-  }
-  /* add text */
-  .skills-primary::before {
-    content: "Main";
-  }
-  
-  .skills-secondary::before {
-    content: "Other";
-  }
-  
-  .experience-institution::before {
-    content: "@";
-  }
-  
-  /* PERCENTAGE*/
-  
-  .skill {
-    background-color: rgb(206, 203, 203);
-    margin-top: 1px;
-    padding: 4px;
+
+/*header*/
+.contact-value {
+  color: red;
+}
+a {
+  color: red;
+  text-decoration: none;
+}
+
+hgroup h1 {
+  padding-bottom: 20px;
+  color: red;
+}
+hgroup h2 {
+  color: red;
+}
+img {
+  padding-left: 40px;
+}
+
+#contact h3 {
+  display: none;
+}
+/* contact*/
+header {
+  background-color: rgb(167, 164, 164);
+}
+.contact-type {
+  color: white;
+  background-color: red;
+  width: 110px;
+  padding-top: 4px;
+}
+
+/* second section*/
+#about {
+  margin-top: 50px;
+}
+#about h3 {
+  margin-bottom: 20px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgb(177, 168, 168);
+}
+
+#competencies {
+  margin-top: 50px;
+}
+#competencies h3 {
+  margin-bottom: 20px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgb(177, 168, 168);
+}
+/* red circle */
+#competencies h3::before {
+  content: "🔴";
+  color: red;
+}
+#about h3::before {
+  content: "🔴";
+  color: red;
+}
+
+#experiences h3::before {
+  content: "🔴";
+  color: red;
+}
+#education h3::before {
+  content: "🔴";
+  color: red;
+}
+#hobbies h3::before {
+  content: "🔴";
+  color: red;
+}
+/* add text */
+.skills-primary::before {
+  content: "Main";
+}
+
+.skills-secondary::before {
+  content: "Other";
+}
+
+.experience-institution::before {
+  content: "@";
+}
+
+/* PERCENTAGE*/
+
+.skill {
+  background-color: rgb(206, 203, 203);
+  margin-top: 1px;
+  padding: 4px;
+  display: flex;
+}
+.skills-primary [data-skill="5"] span {
+  background-color: red;
+  width: 50%;
+}
+
+.skills-primary [data-skill="3"] span {
+  background-color: red;
+  width: 30%;
+}
+.skills-primary [data-skill="1"] span {
+  background-color: red;
+  width: 20%;
+}
+
+.skills-secondary [data-skill="9"] span {
+  background-color: rgb(241, 113, 113);
+  width: 70%;
+}
+.skills-secondary [data-skill="5"] span {
+  background-color: rgb(241, 113, 113);
+  width: 40%;
+}
+.skills-secondary [data-skill="7"] span {
+  background-color: rgb(241, 113, 113);
+  width: 60%;
+}
+
+/*THIRD SECTION  TITLES*/
+
+#experiences h3 {
+  margin-bottom: 20px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgb(177, 168, 168);
+}
+
+#education h3 {
+  margin-bottom: 20px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgb(177, 168, 168);
+}
+
+/*THIRD SECTION */
+
+.experience-type {
+  color: red;
+  padding-top: 10px;
+}
+.experience-institution {
+  color: rgb(252, 67, 67);
+}
+
+.experience-details {
+  margin-bottom: 15px;
+  color: grey;
+}
+.experience-date-separator {
+  color: red;
+}
+.experience-description {
+  padding-bottom: 10px;
+}
+
+#hobbies {
+  position: flex;
+  align-self: flex-start;
+  width: 100%;
+}
+
+#hobbies h3 {
+  border-bottom: 1px solid rgb(177, 168, 168);
+  padding-bottom: 10px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 850px) {
+  .content {
     display: flex;
-  }
-  .skills-primary [data-skill="5"] span {
-    background-color: red;
-    width: 50%;
-  }
-  
-  .skills-primary [data-skill="3"] span {
-    background-color: red;
-    width: 30%;
-  }
-  .skills-primary [data-skill="1"] span {
-    background-color: red;
-    width: 20%;
-  }
-  
-  .skills-secondary [data-skill="9"] span {
-    background-color: rgb(241, 113, 113);
-    width: 70%;
-  }
-  .skills-secondary [data-skill="5"] span {
-    background-color: rgb(241, 113, 113);
-    width: 40%;
-  }
-  .skills-secondary [data-skill="7"] span {
-    background-color: rgb(241, 113, 113);
-    width: 60%;
-  }
-  
-  /*THIRD SECTION  TITLES*/
-  
-  #experiences h3 {
-    margin-bottom: 20px;
-    padding-bottom: 4px;
-    border-bottom: 1px solid rgb(177, 168, 168);
-  }
-  
-  #education h3 {
-    margin-bottom: 20px;
-    padding-bottom: 4px;
-    border-bottom: 1px solid rgb(177, 168, 168);
-  }
-  
-  /*THIRD SECTION */
-  
-  .experience-type {
-    color: red;
-    padding-top: 10px;
-  }
-  .experience-institution {
-    color: rgb(252, 67, 67);
-  }
-  
-  .experience-details {
-    margin-bottom: 15px;
-    color: grey;
-  }
-  .experience-date-separator {
-    color: red;
-  }
-  .experience-description {
-    padding-bottom: 10px;
-  }
-  
-  #hobbies {
-    position: flex;
-    align-self: flex-start;
+    flex-direction: column;
     width: 100%;
   }
-  
-  #hobbies h3 {
-    border-bottom: 1px solid rgb(177, 168, 168);
-    padding-bottom: 10px;
+  #contact {
+    position: relative;
   }
-  
-  @media screen and (min-width: 320px) and (max-width: 850px) {
-    .content {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
-    #contact {
-      position: relative;
-    }
-  }
-  
+}
