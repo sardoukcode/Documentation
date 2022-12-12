@@ -31,4 +31,9 @@ joins:
 -2-SELECT employees.Name from employees INNER JOIN companies where companies.name=employees.Company AND companies.date<2000
 -3-SELECT companies.Name from companies INNER JOIN employees WHERE companies.Name = employees.Company AND employees.Role='Graphic Designer'
 
-
+count and filter
+-1-SELECT  name FROM students WHERE Points = (SELECT MAX(Points) FROM students);
+-2-SELECT avg(points) FROM students
+-3-SELECT count(name) from students where Points=500
+-4-SELECT * FROM students WHERE name LIKE '%s%';
+-5-SELECT * FROM students ORDER BY Points
