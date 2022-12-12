@@ -26,3 +26,9 @@ creating table:
 -3- DELETE FROM graduates
 WHERE name ="layal"
 
+joins:
+-1-SELECT employees.Name,companies.Name,companies.Date from employees INNER JOIN companies where employees.Company=companies.Name
+-2-SELECT employees.Name from employees INNER JOIN companies where companies.name=employees.Company AND companies.date<2000
+-3-SELECT companies.Name from companies INNER JOIN employees WHERE companies.Name = employees.Company AND employees.Role='Graphic Designer'
+
+
