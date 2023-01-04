@@ -54,7 +54,7 @@ task 2 is marked as checked
   - <kbd>writing a CRUD</kbd>
   - <kbd>writing and reading files</kbd>
 
-## Step 1: Testing the software
+## Step 1: Testing the softwarec
 
 The software provided already has a few commands built-in. Let's try them.
 
