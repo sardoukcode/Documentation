@@ -36,6 +36,8 @@ function onDataReceived(text) {
     quit();
   } else if (text === "hello\n") {
     hello();
+  } else if (text === "help\n") {
+    help();
   } else {
     unknownCommand(text);
   }
@@ -70,6 +72,12 @@ function quit() {
   console.log("Quitting now, goodbye!");
   process.exit();
 }
+// help command
+const helps = ["hello for greating" , "exit and quit for exiting"];
 
+function help() {
+  console.log(helps);
+
+}
 // The following line starts the application
 startApp("Faysal Sardouk");
