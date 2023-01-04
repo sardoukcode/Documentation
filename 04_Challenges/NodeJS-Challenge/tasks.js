@@ -72,7 +72,7 @@ function quit() {
   console.log("Quitting now, goodbye!");
   process.exit();
 }
-// help command
+// help command to help the user
 const helps = ["hello for greating" , "exit and quit for exiting"];
 
 function help() {
