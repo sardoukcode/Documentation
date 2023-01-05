@@ -109,7 +109,7 @@ function quit() {
   process.exit();
 }
 // help command to help the user
-const helps = ["hello for greating", "exit and quit for exiting"];
+const helps = ["hello for greating", "exit and quit for exiting","list to show the arrays", "add for adding new element to array", "remove" ,"remove 1" ,"remove 2"];
 
 function help() {
   console.log(helps);
