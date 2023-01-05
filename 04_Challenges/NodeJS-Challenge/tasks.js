@@ -41,6 +41,8 @@ function onDataReceived(text) {
     hello();
   } else if (firstWord === "hello" && secondWord) {
     secondHello(secondWord);
+  } else if (firstWord === "add" && secondWord) {
+    addOption(secondWord);
   } else if (text === "help\n") {
     help();
   } else {
@@ -72,6 +74,11 @@ function secondHello(secondWord) {
   console.log(`Hello ${secondWord}`);
 }
 
+function addOption(secondWord) {
+  let list = ["eat", "sleep", "code"];
+  list.push(secondWord.trim());
+  console.log(list);
+}
 /**
  * Exits the application
  *
@@ -91,8 +98,6 @@ function help() {
 function hellox(name) {
   console.log(`Hello ${name}`);
 }
-
-const list = ["eat" , "sleep" , "code"]; 
 
 // The following line starts the application
 startApp("Faysal Sardouk");
