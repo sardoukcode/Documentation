@@ -45,6 +45,12 @@ function onDataReceived(text) {
     addOption(secondWord);
   } else if (text === "help\n") {
     help();
+  } else if (firstWord === "remove\n") {
+    FirstRemove();
+  } else if (firstWord === "remove" || secondWord === 1) {
+    SecondRemove();
+  } else if (firstWord === "remove" || secondWord === 2) {
+    ThirdRemove();
   } else {
     unknownCommand(text);
   }
@@ -74,11 +80,25 @@ function secondHello(secondWord) {
   console.log(`Hello ${secondWord}`);
 }
 
+var list = ["eat", "sleep", "code"];
+
 function addOption(secondWord) {
-  let list = ["eat", "sleep", "code"];
   list.push(secondWord.trim());
   console.log(list);
 }
+function FirstRemove() {
+  list.pop();
+  console.log(list);
+}
+function SecondRemove() {
+  list.splice(0,1);
+  console.log(list);
+}
+function ThirdRemove() {
+  list.splice(1,1);
+  console.log(list);
+}
+
 /**
  * Exits the application
  *
