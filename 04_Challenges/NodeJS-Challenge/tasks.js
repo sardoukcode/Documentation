@@ -32,10 +32,15 @@ function startApp(name) {
  * @returns {void}
  */
 function onDataReceived(text) {
+  let firstWord = text.split(" ")[0];
+  let secondWord = text.split(" ")[1];
+
   if (text === "quit\n" || text === "exit\n") {
     quit();
-  } else if (text === "hello\n") {
+  } else if (firstWord === "hello\n") {
     hello();
+  } else if (firstWord === "hello" && secondWord) {
+    secondHello(secondWord);
   } else if (text === "help\n") {
     help();
   } else {
@@ -60,7 +65,11 @@ function unknownCommand(c) {
  * @returns {void}
  */
 function hello() {
-  console.log("hello!");
+  console.log(`Hello!`);
+}
+
+function secondHello(secondWord) {
+  console.log(`Hello ${secondWord}`);
 }
 
 /**
@@ -73,11 +82,14 @@ function quit() {
   process.exit();
 }
 // help command to help the user
-const helps = ["hello for greating" , "exit and quit for exiting"];
+const helps = ["hello for greating", "exit and quit for exiting"];
 
 function help() {
   console.log(helps);
+}
 
+function hellox(name) {
+  console.log(`Hello ${name}`);
 }
 // The following line starts the application
 startApp("Faysal Sardouk");
