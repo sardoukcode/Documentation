@@ -91,5 +91,8 @@ function help() {
 function hellox(name) {
   console.log(`Hello ${name}`);
 }
+
+const list = ["eat" , "sleep" , "code"]; 
+
 // The following line starts the application
 startApp("Faysal Sardouk");
