@@ -45,12 +45,14 @@ function onDataReceived(text) {
     addOption(secondWord);
   } else if (text === "help\n") {
     help();
-  } else if (firstWord === "remove\n") {
-    FirstRemove();
   } else if (firstWord === "remove" || secondWord === 1) {
     SecondRemove();
-  } else if (firstWord === "remove" || secondWord === 2) {
+  } else if (firstWord === "remove" || secondWord === 2 ) {
     ThirdRemove();
+  } else if (text === "remove\n") {
+    FirstRemove();
+  } else if (firstWord === "remove" && secondWord) {
+    RemoveBetter(secondWord);
   } else {
     unknownCommand(text);
   }
@@ -87,16 +89,19 @@ function addOption(secondWord) {
   console.log(list);
 }
 function FirstRemove() {
-  list.pop();
+  list.splice(list.length - 1, 1);
   console.log(list);
 }
 function SecondRemove() {
-  list.splice(0,1);
+  list.splice(0, 1);
   console.log(list);
 }
 function ThirdRemove() {
-  list.splice(1,1);
+  list.splice(1, 1);
   console.log(list);
+}
+function RemoveBetter() {
+  console.log("better remove");
 }
 
 /**
@@ -109,7 +114,15 @@ function quit() {
   process.exit();
 }
 // help command to help the user
-const helps = ["hello for greating", "exit and quit for exiting","list to show the arrays", "add for adding new element to array", "remove" ,"remove 1" ,"remove 2"];
+const helps = [
+  "hello for greating",
+  "exit and quit for exiting",
+  "list to show the arrays",
+  "add for adding new element to array",
+  "remove",
+  "remove 1",
+  "remove 2",
+];
 
 function help() {
   console.log(helps);
@@ -117,6 +130,16 @@ function help() {
 
 function hellox(name) {
   console.log(`Hello ${name}`);
+}
+// DATA MODELLING 
+let tasks = [
+  { text: 'Get milk', done: false },
+  { text: 'Buy bread', done: false },
+  { text: 'Do laundry', done: false },
+];
+for (let task of tasks) {
+  let prefix = task.done ? '[✓] ' : '[ ] ';
+  console.log(prefix + task.text);
 }
 
 // The following line starts the application
