@@ -47,12 +47,16 @@ function onDataReceived(text) {
     help();
   } else if (firstWord === "remove" || secondWord === 1) {
     SecondRemove();
-  } else if (firstWord === "remove" || secondWord === 2 ) {
+  } else if (firstWord === "remove" || secondWord === 2) {
     ThirdRemove();
   } else if (text === "remove\n") {
     FirstRemove();
   } else if (firstWord === "remove" && secondWord) {
     RemoveBetter(secondWord);
+  } else if (firstWord === "check" && secondWord === 1) {
+    firstCheck();
+  } else if (firstWord === "uncheck") {
+    oppositeOfCheck();
   } else {
     unknownCommand(text);
   }
@@ -131,16 +135,21 @@ function help() {
 function hellox(name) {
   console.log(`Hello ${name}`);
 }
-// DATA MODELLING 
+// DATA MODELLING
 let tasks = [
-  { text: 'Get milk', done: false },
-  { text: 'Buy bread', done: false },
-  { text: 'Do laundry', done: false },
+  { text: "Get milk", done: false },
+  { text: "Buy bread", done: false },
+  { text: "Do laundry", done: false },
 ];
 for (let task of tasks) {
-  let prefix = task.done ? '[✓] ' : '[ ] ';
+  let prefix = task.done ? "[✓] " : "[ ] ";
   console.log(prefix + task.text);
 }
-
+function firstCheck() {
+  tasks[0].done = true;
+}
+function oppositeOfCheck() {
+  tasks[0].done = false;
+}
 // The following line starts the application
 startApp("Faysal Sardouk");
